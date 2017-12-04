@@ -11,7 +11,7 @@ public:
 
 protected:
 	const int console_l = 30;
-	const int console_w = 30;
+	const int console_w = 30; 
 	int l;
 	int w;
 };

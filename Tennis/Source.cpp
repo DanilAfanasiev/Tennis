@@ -48,21 +48,22 @@ int main() {
 
 	char c = -1;
 	Shape *newShape = nullptr;
+	cout << "Press:" << endl << endl << "1 - to choose pentagon" << endl << endl << "2 - to choose square" << endl << endl;
 	cin >> c;
 	switch (c)
 	{
 	case '1':
 		newShape = new Pentagon();
+		newShape->move(10,15);
 		break;
 	case '2':
 		newShape = new Square();
+		newShape->move(10,15);
 		break;
 	default:
 		break;
 	}
 
-	newShape->draw(1,1);
-		
 
 	system("pause");
 	return 0;
